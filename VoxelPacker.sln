@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoxelPacker", "VoxelPacker\VoxelPacker.csproj", "{ED129467-960E-4FE2-A420-E7B3680E3352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{ECF3B242-6F36-4BFB-9439-3655DD2CE07E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED129467-960E-4FE2-A420-E7B3680E3352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED129467-960E-4FE2-A420-E7B3680E3352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED129467-960E-4FE2-A420-E7B3680E3352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED129467-960E-4FE2-A420-E7B3680E3352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF3B242-6F36-4BFB-9439-3655DD2CE07E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF3B242-6F36-4BFB-9439-3655DD2CE07E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF3B242-6F36-4BFB-9439-3655DD2CE07E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF3B242-6F36-4BFB-9439-3655DD2CE07E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7E806ED-3ED3-42D6-A0B4-CDEF701545D1}
+	EndGlobalSection
+EndGlobal
