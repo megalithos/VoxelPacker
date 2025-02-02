@@ -22,4 +22,19 @@
     <ProjectReference Include="..\VoxelPacker\VoxelPacker.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="destroy_single_voxel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="london_falling_building_test">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="london_falling_tree_test">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="testdata_1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

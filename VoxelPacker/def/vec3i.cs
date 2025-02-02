@@ -24,6 +24,11 @@ namespace VoxelPacker
             return new vec3i(a.x - b.x, a.y - b.y, a.z - b.z);
         }
 
+        public static vec3i operator +(vec3i a, vec3i b)
+        {
+            return new vec3i(a.x + b.x, a.y + b.y, a.z + b.z);
+        }
+
         public static vec3i operator *(vec3i a, int scalar)
         {
             return new vec3i(a.x * scalar, a.y * scalar, a.z * scalar);

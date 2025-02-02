@@ -10,7 +10,7 @@ using VoxelPacker.util;
 
 namespace TestProject1
 {
-    internal static class TestHelper
+    public static class TestHelper
     {
         public static List<voxeldata> parse(string path)
         {
