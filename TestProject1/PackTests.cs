@@ -36,6 +36,40 @@ namespace TestProject1
         {
         }
 
+        // added this cus was getting IndexOutOfRangeException after adding
+        // packing of color alphas
+        [Test]
+        public void test_single_voxel_pack_with_alpha()
+        {
+            List<voxeldata> list = new List<voxeldata>();
+            list.Add(new voxeldata { damagedValue = 3, flags = voxelflags.Damaged | voxelflags.Placed, position = new vec3i(270, 25, 168), _color = new color { r = 34, g = 42, b = 26, a = 255 } });
+            byte[] buf = Packer.Pack(list);
+            var outlist = Packer.Unpack(buf);
+
+            Assert.AreEqual(list.Count, outlist.Count);
+            Assert.AreEqual(list[0]._color.a, outlist[0]._color.a);
+        }
+
+        [Test]
+        public void random_test()
+        {
+            List<voxeldata> list = new List<voxeldata>();
+
+            vec3i pos = new vec3i(0, 0, 0);
+
+            for (int i = 0; i < 100; i++)
+            {
+                voxeldata basepos = new voxeldata();
+                basepos.position = pos;
+                list.Add(basepos);
+                pos.z++;
+            }
+
+            byte[] bytes = Packer.Pack(list);
+            Console.WriteLine(bytes.Length);
+
+        }
+
         [Test]
         public void TestPackUnpackWorks_1()
         {

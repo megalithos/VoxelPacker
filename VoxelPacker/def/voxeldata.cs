@@ -31,7 +31,7 @@ namespace VoxelPacker.def
 {
     public struct voxeldata : IEquatable<voxeldata>
     {
-        public const int max_bytes_per_voxeldata = 11;
+        public const int max_bytes_per_voxeldata = 12;
 
         public voxelflags flags;
         public vec3i position;

@@ -34,6 +34,7 @@ namespace VoxelPacker.def
         public byte r;
         public byte g;
         public byte b;
+        public byte a;
 
         public override bool Equals(object obj)
         {
@@ -46,7 +47,7 @@ namespace VoxelPacker.def
 
         public bool Equals(color other)
         {
-            return r == other.r && g == other.g && b == other.b;
+            return r == other.r && g == other.g && b == other.b && a == other.a;
         }
 
         public override int GetHashCode()
@@ -55,6 +56,7 @@ namespace VoxelPacker.def
             hash = hash * 31 + r.GetHashCode();
             hash = hash * 31 + g.GetHashCode();
             hash = hash * 31 + b.GetHashCode();
+            hash = hash * 31 + a.GetHashCode();
             return hash;
         }
 

@@ -92,6 +92,7 @@ namespace VoxelPacker
                     buffer[write_index++] = Convert.ToByte(curr._color.r);
                     buffer[write_index++] = Convert.ToByte(curr._color.g);
                     buffer[write_index++] = Convert.ToByte(curr._color.b);
+                    buffer[write_index++] = Convert.ToByte(curr._color.a);
                 }
 
                 if (hasDamagedValue)
@@ -193,7 +194,8 @@ namespace VoxelPacker
                     {
                         r = buffer[read_index++],
                         g = buffer[read_index++],
-                        b = buffer[read_index++]
+                        b = buffer[read_index++],
+                        a = buffer[read_index++]
                     };
                 }
 

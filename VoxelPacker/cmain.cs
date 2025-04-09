@@ -9,6 +9,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using VoxelPacker.def;
 
 namespace VoxelPacker
 {
